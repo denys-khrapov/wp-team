@@ -1,0 +1,363 @@
+.section-price {
+	padding: 60px 0px 44px 0px;
+	background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
+
+	@media (min-width: 1200px) {
+		padding: 100px 0px 59px 0px;
+	}
+}
+
+.price {
+	margin-bottom: 36px;
+	text-align: center;
+
+	&-box {
+		padding: 0px 10px;
+
+		@media (min-width: 1200px) {
+			padding: 0px 0px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 55px;
+		}
+	}
+
+	&__title {
+		font-weight: 300;
+		font-size: 32px;
+		line-height: 44px;
+		margin-bottom: 40px;
+		color: #FFFFFF;
+
+		br {
+			@media (min-width: 1200px) {
+				display: none;
+
+			}
+		}
+
+		@media (min-width: 1200px) {
+			font-size: 48px;
+			line-height: 64px;
+			letter-spacing: -0.5px;
+		}
+	}
+
+	&__card {
+		width: 100%;
+		max-width: 475px;
+		margin: 0 auto;
+		background-color: #FFFFFF;
+		padding: 48px 51px 40px 55px;
+		border-radius: 6px;
+		margin-bottom: 20px;
+
+		@media (min-width: 1200px) {
+			max-width: 380px;
+			min-height: 340px;
+			margin-bottom: 0;
+		}
+
+		&:nth-child(2) {
+			.price__card-text {
+				margin-bottom: 20px;
+			}
+
+			.price__card-num {
+				margin-bottom: 16px;
+			}
+		}
+
+		&:nth-child(3) {
+			.price__card-text {
+				margin-bottom: 20px;
+			}
+
+			.price__card-num {
+				margin-bottom: 16px;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+
+
+
+		&--active {
+			outline: 4px solid $orangeColor;
+
+			@media (min-width: 1200px) {
+				outline: none;
+				border: 4px solid $greenColor;
+				padding: 59px 51px 59px 55px;
+			}
+
+			.price__card-title {
+				@media (min-width: 1200px) {
+					padding-bottom: 16px;
+				}
+			}
+
+		}
+
+
+
+		&-title {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 18px;
+
+			letter-spacing: 0.8px;
+			text-transform: uppercase;
+			color: #323642;
+			position: relative;
+			padding-bottom: 14px;
+			margin-bottom: 16px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 24px;
+				height: 2px;
+				background-color: $greenColor;
+			}
+		}
+
+		&-num {
+			position: relative;
+			padding-bottom: 18px;
+			margin-bottom: 27px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: #EBECED;
+			}
+
+			p {
+				font-weight: 300;
+				font-size: 56px;
+				line-height: 66px;
+				letter-spacing: -1.5px;
+				color: $textColor;
+			}
+		}
+
+		&-text {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 22px;
+			color: #323642;
+			margin-bottom: 30px;
+		}
+
+		&-btn {
+			width: 205px;
+
+			&.btn-full {
+				background: linear-gradient(0deg, #FF8D00 3.81%, #FFA400 97.78%);
+
+				@media (min-width: 1200px) {
+					background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+				}
+			}
+		}
+	}
+}
+
+.num-sub,
+.num-sup {
+	display: inline-block;
+	letter-spacing: 0px;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.num-sup {
+	position: relative;
+	top: -20px;
+	left: -5px;
+}
+
+.num-sale {
+	display: inline-block;
+	margin-right: 8px;
+	color: #F24458;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background-color: #F24458;
+		top: 50%;
+		left: 0;
+	}
+}
+
+.ways {
+	&__wrapper {
+		@media (min-width: 1200px) {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			max-width: 906px;
+			margin: 0 auto;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 28px;
+		color: #FFFFFF;
+		margin-bottom: 20px;
+
+		@media (min-width: 1200px) {
+			margin: 0px 0px 30px 0px;
+		}
+
+	}
+
+	&__body {
+		width: 100%;
+		max-width: 305px;
+		margin: 0 auto 58px auto;
+
+		@media (min-width: 1200px) {
+			width: 100%;
+			max-width: 775px;
+			margin: 0px 0px 30px 0px;
+		}
+
+	}
+
+	&__pay {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		@media (min-width: 1200px) {
+			align-items: center;
+
+		}
+
+		&-item {
+			margin-bottom: 25px;
+
+			@media (min-width: 1200px) {
+				margin-bottom: 0px;
+			}
+
+			&--visa {
+				width: 100px;
+				height: 36px;
+			}
+
+			&--mastercard {
+				width: 65px;
+				height: 51px;
+			}
+
+			&--express {
+				width: 54px;
+				height: 54px;
+			}
+
+			&--paypal {
+				width: 100px;
+				height: 24px;
+			}
+
+			&--bitcoin {
+				width: 79px;
+				height: 24px;
+			}
+
+			&--okpay {
+				width: 74px;
+				height: 18px;
+			}
+
+			&--amazonpay {
+				width: 120px;
+				height: 23px;
+				margin: 0 auto;
+
+				@media (min-width: 1200px) {
+					margin: 0px 0px 0px 0px;
+				}
+			}
+		}
+	}
+
+	&__links {
+		text-align: center;
+
+		@media (min-width: 1200px) {
+			margin: 0 auto;
+		}
+
+		&-item {
+			display: inline-block;
+			color: $greenColor;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 18px;
+			letter-spacing: 0.8px;
+			text-transform: uppercase;
+			position: relative;
+			padding-right: 33px;
+			margin-bottom: 34px;
+
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			@media (min-width: 1200px) {
+				margin-bottom: 0px;
+				margin-right: 43px;
+				letter-spacing: 0.8px;
+			}
+
+			&:last-child {
+				@media (min-width: 1200px) {
+					margin-right: 0px;
+				}
+			}
+
+
+
+
+			&::after {
+				content: '';
+				position: absolute;
+				background-image: url(../img/arrow.svg);
+				background-repeat: no-repeat;
+				width: 15px;
+				height: 10px;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

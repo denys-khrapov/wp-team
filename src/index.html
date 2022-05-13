@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wp-theme</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+    <!-- Header -->
+    @@include('./html/_header.html')
+
+    <!-- Main Page -->
+    <main>
+        @@include('./html/_nav.html')
+        @@include('./html/_main-post.html')
+        @@include('./html/_tags.html')
+        @@include('./html/_search.html')
+        @@include('./html/_recent-post.html')
+        @@include('./html/_price.html')
+
+    </main>
+
+    <!-- Footer -->
+    @@include('./html/_footer.html')
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/scripts.min.js"></script>
+
+</body>
+
+
+</html>
